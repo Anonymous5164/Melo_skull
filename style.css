@@ -1,0 +1,810 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: radial-gradient(rgb(94, 31, 94) 0%, rgb(37, 37, 99)35% ,rgb(17, 27, 55)70%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+    align-items: flex-start;
+}
+  
+/* body section{
+    box-shadow: 0px 0px 5px 5px lightgray;
+} */
+
+/* Left side */
+
+#left_side{
+    width: 4.5rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1.5rem 1.5rem 0rem 1rem;
+    /* background-color: rgba(128, 128, 128, 0.4);
+    box-shadow: 0px 0px 5px 4px lightgray;
+    margin: 3.5rem; */
+
+    /* removing_bg */
+    /* background-color: rgba(128, 128, 128, 0.2);
+    box-shadow: 0px 0px 5px 4px lightgray; */
+    position: sticky;
+    top: 1.5rem;
+    left: 1rem;
+}
+
+
+/* Left Side -> Logo */
+
+#logo{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 2px solid white;
+    /* margin: 0.8rem; */
+    margin-top: 1.5rem;
+    background-color: greenyellow;
+    overflow: hidden;
+    animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+#logo img{
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+}
+
+#logo:hover{
+    box-shadow: 0px 0px 10px 2px whitesmoke;
+    background-color: black;
+    cursor: pointer;
+    animation: none;
+}
+
+/* Left Side -> Icon list */
+
+#list_icons{
+    height: auto;
+    width: 100%;
+    margin-top: 2.5rem;
+    text-align: center;
+    /* padding: 1.5rem; */
+}
+
+#list_icons ul{
+    list-style-type: none;
+    margin-bottom: 1.5rem;
+    /* margin-left: 1rem; */
+}
+
+
+#list_icons li{
+    
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+#list_icons li i:hover{
+    cursor: pointer;
+    color: greenyellow;
+    text-shadow: 0px 0px 10px white;
+      
+}
+
+.left_logout{
+    margin-top: 2rem;
+}
+
+/* Mid section */
+
+#mid{
+    width: 67vw;
+    height: auto;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    /* overflow-y: scroll; */
+    min-width: 400px;
+}
+
+#mid .glowborder{
+    height: auto;
+    width: 100%;
+
+    /* removing_bg */
+    
+    /* box-shadow: 0px 0px 5px 4px lightgray; */
+    margin: 0rem 2rem 2.5rem 0rem;
+}
+
+/* background-color_alternate */
+
+#mid .glowborder:nth-child(2n+1){
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+/* mid --> nav */
+
+#mid nav{
+    box-sizing: border-box;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#mid nav input{
+    border: none;
+    background-color: transparent;
+    background-color: rgb(236, 133, 236, 0.2);
+    color: aquamarine;
+    /* border: 2px solid white; */
+    padding: 0.5rem 0rem 0.5rem 2.5rem;
+    width: 14rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* opacity: 0.4; */
+}
+
+nav p{
+    margin-left: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+#nav_search{
+    width: 15rem;
+    height: auto;
+}
+
+nav i{
+    color: white;
+}
+
+nav input:focus{
+    outline: none;
+}
+
+nav input::placeholder{
+    /* color: white; */
+    color: rgb(155, 147, 147); 
+    font-size: 0.8rem;
+}
+
+#mid nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+#mid nav a:hover{
+    color: greenyellow;
+}
+
+#mid nav i:hover{
+    cursor: pointer;
+    color: aquamarine;
+}
+
+#mid nav .fa-magnifying-glass:hover{
+    color: aquamarine;
+    cursor: pointer;
+}
+
+/* Container and heading class for boxes */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.heading{
+    color: rgb(155, 255, 4);
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: cursive;
+    font-weight: 400;
+}
+
+
+/* Discover */
+
+#discover{
+    box-sizing: border-box;
+    height: auto;
+    padding: 1rem;
+}
+
+.genre{
+    box-sizing: border-box;
+    height: 13rem;
+    width: 12rem;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    word-spacing: 0.5rem;
+    color: transparent;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 8rem;
+}
+
+
+.genre:hover{
+    opacity: 0.8;
+    color: rgb(195, 255, 0);
+    font-family: cursive;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+#pop{
+    background-image: url("./assets/discover/pop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#gym{
+    background-image: url("./assets/discover/gym.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#love{
+    background-image: url("./assets/discover/love.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#vibe{
+    background-image: url("./assets/discover/vibe.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* mid -> Albums */
+
+#albums{
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.alb{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 7rem;
+    width: 22rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-right: 1rem;
+}
+
+
+.alb:hover{
+    color: yellowgreen;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 2px whitesmoke;
+}
+
+.alb img{
+    height: 7rem;
+    width: 7rem;
+    overflow: hidden;
+}
+
+/* Now playing */
+ 
+#playing{
+    box-sizing: border-box;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-image: radial-gradient(rgb(94, 31, 94) 0%, rgb(37, 37, 99)35% ,rgb(17, 27, 55)70%);
+    box-shadow: 0px 0px 5px 4px lightgray;
+    position: sticky;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#playing p{
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#playing:hover{
+    background-image: none;
+    background-color: rgb(127, 255, 212);
+    /* background-color: rgb(184, 241, 71, 0.8); */
+    cursor: pointer;
+}
+
+#playing:hover p{
+    color: black;
+}
+
+#playing audio{
+    height: 2.5rem;
+    width: 50%;
+}
+
+#playing img{
+    border-radius: inherit;
+    height: 100%;
+    width: 8rem;
+}
+
+/* Best Artists */
+
+#artist .container div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: auto;
+    width: 10rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+
+#artist img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+#artist .container p{
+    font-size: 1.5rem;
+    color: white;
+    margin: auto;
+}
+
+#artist i{
+    font-size: 1.5rem;
+    color: transparent;
+}
+
+#artist .container div:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+#artist .container div:hover p{
+    font-weight: 700;
+    color: rgb(87, 244, 87);
+}
+
+#artist .container div:hover i{
+    color: yellowgreen;
+}
+
+/* Songs */
+
+#songs{
+    padding: 1rem;
+}
+
+#songs{
+    box-sizing: border-box;
+}
+
+#songs .container div{
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+#songs .container img{
+    height: 7rem;
+    width: 7rem;
+}
+
+#songs .container p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+#songs .container span{
+    font-size: 0.9rem;
+    color: lightgray;
+}
+
+#songs .container div:hover img{
+    box-shadow: 0px 0px 5px 4px lightgray;
+}
+
+#songs .container div:hover{
+    cursor: pointer;
+}
+
+#songs .container div:hover p{
+    color: greenyellow;
+}
+
+/* Right Side */
+
+#right_side{
+    width: 15rem;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.2);
+    margin-left: 1rem;
+    position: sticky;
+    top: 1.5rem;
+    right: 0rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#now{
+    height: 17rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(243, 64, 104);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#now h3{
+    color: white;
+    font-family: cursive;
+    margin: 0.5rem;
+}
+
+#now img{
+    height: 8rem;
+    width: 80%;
+    opacity: 0.8;
+}
+
+#now div{
+    display: flex;
+    flex-direction: row;
+    width: 90%; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+#now input,i:hover{
+    cursor: pointer;
+}
+
+#now p{
+color: white;
+}
+
+#now i{
+    color: white;
+    opacity: 0.7;
+}
+
+/* Right side -> Queue */
+
+#queue{
+    margin-top: 1rem;
+    background-image: url("./assets/Queue/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+height: 15rem;
+width: 90%;
+background-color: transparent;
+/* box-shadow: 0px 0px 5px 4px lightgray; */
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+overflow-x: scroll;
+/* margin: 1rem; */
+min-width: 15rem;
+}
+
+#queue::-webkit-scrollbar {
+    display: none;
+  }
+
+#queue div{
+    height: 5rem;
+    width: 100%;
+    /* box-shadow: 0px 0px 5px 4px lightgray; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#queue .Q_container:hover{
+    /* box-shadow: 0px 0px 4px 5px lightgray; */
+    cursor: pointer;
+    color: white;
+}
+
+#queue .Q_container:hover img{
+    opacity: 0.8;
+    box-shadow: 0px 0px 4px 5px lightgray;
+}
+
+#queue img{
+    height: 5rem;
+    width: 4.5rem;
+}
+
+#queue .Q_container{
+    margin-bottom: 0.5rem;
+    color: rgb(155, 255, 4);
+    font-size: 1.2rem;
+}
+
+#queue .Q_container:hover .Qn{
+    font-size: 2rem;
+    color: rgba(155, 255, 4);
+}
+
+#Q1{
+    color: transparent;
+    background-image: url("./assets/Queue/walker.jpg");
+    background-size: cover;
+}
+
+#Q2{
+    color: transparent;
+    background-image: url("./assets/Queue/after.jpg");
+    background-size: cover;
+}
+
+#Q3{
+    color: transparent;
+    background-image: url("./assets/Queue/stoney.jpg");
+    background-size: cover;
+}
+
+#Q4{
+    color: transparent;
+    background-image: url("./assets/Queue/beer.jpg");
+    background-size: cover;
+}
+
+#Q5{
+    color: transparent;
+    background-image: url("./assets/Queue/adele.jpg");
+    background-size: cover;
+}
+
+#Q6{
+    color: transparent;
+    background-image: url("./assets/artists/kk.png");
+    background-size: cover;
+}
+
+#Q7{
+    color: transparent;
+    background-image: url("./assets/Queue/billie eilish.jpg");
+    background-size: cover;
+}
+
+/* Hidden Footer(Playing now) */
+
+footer{
+    height: 4.5rem;
+    width: 100%;
+    /* margin-left: 5%; */
+    background-color: rgb(14, 37, 29);
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 4px 4px lightgray;
+}
+
+footer div{
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: greenyellow;
+    /* border: 2px solid white; */
+}
+
+footer img{
+    height: 4.5rem;
+    width: 5.5rem;
+}
+
+footer p{
+    color: white;
+}
+
+footer i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 800px){
+     
+    footer{
+        display: none !important;
+        height: 0 !important;
+        width: 0 !important;
+    }
+
+    .hidden_queue{
+        display: none !important;
+        height: 0 !important;
+        width: 0 !important;
+    }
+
+    #logo_hidden{
+        display: none !important;
+        height: 0 !important;
+        width: 0 !important;
+    }
+
+    #nav_queue{
+        display: none !important;
+        height: 0 !important;
+        width: 0 !important;
+    }
+}
+
+@media screen and (max-width: 800px){
+    
+    body{
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    #right_side{
+        display: none;
+        height: 0rem;
+        width: 0rem;
+        margin-left: 0.5rem !important;
+    }
+
+    #right_side div{
+        display: none;
+        height: 0rem;
+        width: 0rem;
+    }
+
+    #left_side{
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-around !important;
+        width: 100% !important;
+        height: 5rem;
+       /* border: 2px solid white !important; */
+       margin-right: 0.5rem !important;
+       position: static;
+       /* box-sizing: border-box; */
+       /* margin-top: 0.5rem; */
+    }
+
+#left_side #logo{
+    display: none !important;
+    height: 0rem !important;
+    width: 0rem !important;
+}
+
+#logo_hidden{
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding: auto;
+}
+
+#list_icons{
+    height: 100%;
+    width: 100%;
+}
+
+    #list_icons ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 110% !important;
+        width: 100% !important;
+        margin-top: -2rem !important;
+        margin-bottom: -2rem !important;
+    }
+
+.left_logout{
+    margin-top: 0rem !important;
+}
+
+    #mid{
+        width: 85% !important;
+        margin-right: 0.5rem !important;
+        margin-top: 0.5rem;
+        /* border: 2px solid white !important; */
+    }
+
+     #mid nav{
+        width: 100% !important;
+        /* border: 2px solid white !important; */
+    }
+
+    footer{
+        display: flex;
+        height: 100%;
+        width: 100% ;
+    }
+
+    .hidden_queue{
+        display: flex;
+        height: 17rem;
+        width: 100%;
+        font-weight: 900;
+    }
+
+    .hidden_queue p{
+           font-size: 1.5rem;
+    }
+}

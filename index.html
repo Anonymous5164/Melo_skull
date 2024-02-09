@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e76188b3a5.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Melo Skull</title>
+    
+</head>
+<body>
+
+    
+<!-- Responsive Logo -->
+
+<div id="logo_hidden" style="display: flex; justify-content: center; align-items: center;">
+
+    <div id="logo">
+        <img src="./assets/logo.png" title="Melo Skull" srcset="">
+    </div>
+
+    <p style="font-size: 3rem; color: rgb(186, 246, 65); font-weight: 700; font-family: cursive; margin-left: 1.5rem; text-shadow: 0px 0px 10px white;">Melo Skull</p>
+
+</div>
+
+<!-- Left Side -->
+
+<section id="left_side">
+
+    <div id="logo">
+        <img src="./assets/logo.png" title="Melo Skull" srcset="">
+    </div>
+
+
+    <div id="list_icons">
+
+       <ul>
+        
+        <li> <i class="fa-solid fa-house-user" title="Home"></i> </li>
+
+       <a href="./playlist.html"><li> <i class='bx bxs-playlist' title="Playlists"></i></li> </a>
+        
+       <a href="./playlist.html"> <li> <i class="fa-solid fa-heart" title="Favourites"></i> </li></a>
+        
+        <li> <i class="fa-solid fa-podcast" title="Podcast"></i> </li>
+        
+        <li> <i class="fa-solid fa-gear" title="Settings"></i> </li>
+
+       <li> <i class="fa-solid fa-right-from-bracket left_logout" title="Logout" style="color: red;"></i> </li>
+       </ul>
+
+    </div>
+
+</section>
+
+<!-- MID => Section -->
+
+<section id="mid">
+
+    <nav class="glowborder">
+
+        <p><a href="#discover">Discover</a></p>
+        <p><a href="#albums">Albums</a></p>
+        <p><a href="#artist">Artists</a></p>
+        <p><a href="#songs">Songs</a></p>
+        <p id= "nav_queue"><a href="#queue">Queue</a></p>
+        
+            
+            <div id="nav_search" style="display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; justify-content: center; color: white;"> 
+     
+    <i class="fa-solid fa-magnifying-glass" style="font-size: 1.2rem;
+            margin-right: -2rem;"></i>
+    
+
+   
+    <input type="text" id="search" placeholder="Search Music or Podcast">
+    
+
+    
+        <i class="fa-solid fa-microphone"  style="font-size: 1.2rem; margin-left: -2rem;
+        display: inline;"></i>
+       
+
+    </span>
+    </nav>
+
+
+    <div id="discover" class="glowborder">
+
+    <p style="color: rgb(155, 255, 4);" class="heading">Discover your day</p>
+
+    <div class="container">
+
+        <a href="./playlist.html"><div class="genre" id="gym">
+            <i class="fa-sharp fa-solid fa-circle-play fa-beat"> GYM</i>
+        </div> </a>
+
+        <a href="./playlist.html"><div class="genre" id="love"><i class="fa-sharp fa-solid fa-circle-play fa-beat"> LOVE</i></div></a>
+
+        <a href="./playlist.html"><div class="genre" id="pop"><i class="fa-sharp fa-solid fa-circle-play fa-beat"> POP</i></div></a>
+
+        <a href="./playlist.html"><div class="genre" id="vibe"><i class="fa-sharp fa-solid fa-circle-play fa-beat"> VIBE</i></div></a>
+        
+    </div>
+
+</div>
+
+
+
+    <div id="albums" class="glowborder">
+
+        <p class="heading">Golden Record Rack</p>
+
+        <div class="container">
+
+            <div class="alb"> <img src="./assets/albums/dharia.jpg" title="" srcset=""> 
+                <span>Sugar and Brownies</span> 
+                <i class="fa-solid fa-ellipsis-vertical"></i> </div>
+
+            <div class="alb"> <img src="./assets/albums/kendrick.jpeg" title="" srcset=""> 
+                <span>DAMN.</span>
+            <i class="fa-solid fa-ellipsis-vertical"></i> </div>
+
+            <div class="alb"> <img src="./assets/albums/marvel.jpeg" title="" srcset=""> 
+                <span>Wakanda Forever</span>
+            <i class="fa-solid fa-ellipsis-vertical"></i> </div>
+            
+            <div class="alb"> <img src="./assets/albums/selena.jpeg" title="" srcset=""> 
+                <span>Rare</span>
+            <i class="fa-solid fa-ellipsis-vertical"></i> </div>
+            
+            <div class="alb"> <img src="./assets/albums/katy.png" title="" srcset=""> 
+                <span>Rise</span>
+            <i class="fa-solid fa-ellipsis-vertical"></i> </div>
+
+            <div class="alb"> <img src="./assets/albums/drake.jpeg" title="" srcset=""> 
+                <span>Scorpion</span>
+            <i class="fa-solid fa-ellipsis-vertical"></i> </div>
+            
+        </div>
+    </div>
+
+    
+    <div id="artist" class="glowborder">
+
+<p class="heading">Melody Monarchs</p>
+
+<div class="container">
+
+    <a href="./playlist.html"><div>
+        <i class="fa-solid fa-play fa-beat"></i>
+        <img src="./assets/artists/kk.png" alt="" srcset=""> <p>KK</p> 
+    </div></a>
+    
+    <a href="./playlist.html"><div>
+        <i class="fa-solid fa-play fa-beat"></i>
+        <img src="./assets/artists/rihana.png" alt="" srcset=""> <p>Rihana</p> 
+    </div></a>
+
+    <a href="./playlist.html"><div>
+        <i class="fa-solid fa-play fa-beat"></i>
+        <img src="./assets/artists/malone.png" alt="" srcset=""> <p>Post Malone</p> 
+    </div></a>
+
+    <a href="./playlist.html"><div>
+        <i class="fa-solid fa-play fa-beat"></i>
+        <img src="./assets/artists/camila.jpeg" alt="" srcset=""> <p>Camila Cabello</p> 
+    </div></a>
+
+    <a href="./playlist.html"><div>
+        <i class="fa-solid fa-play fa-beat"></i>
+        <img src="./assets/artists/zayn.jpg" alt="" srcset=""> <p>Zayn Malik</p> 
+    </div></a>
+
+    <a href="./playlist.html"><div>
+        <i class="fa-solid fa-play fa-beat"></i>
+        <img src="./assets/artists/katy.jpeg" alt="" srcset=""> <p>Katy Perry</p> 
+    </div></a>
+
+    <a href="./playlist.html"><div>
+        <i class="fa-solid fa-play fa-beat"></i>
+        <img src="./assets/artists/kendrick.jpg" alt="" srcset=""> <p>Kendrick Lamar</p> 
+    </div></a>
+
+    <a href="./playlist.html"><div>
+        <i class="fa-solid fa-play fa-beat"></i>
+        <img src="./assets/artists/taylor.jpeg" alt="" srcset=""> <p>Taylor Swift</p> 
+    </div></a>
+
+    <a href="./playlist.html"><div>
+        <i class="fa-solid fa-play fa-beat"></i>
+        <img src="./assets/artists/arijit.png" alt="" srcset=""> <p>Arijit Singh</p> 
+    </div></a>
+
+    <a href="./playlist.html"><div>
+        <i class="fa-solid fa-play fa-beat"></i>
+        <img src="./assets/artists/ariana.jpeg" alt="" srcset=""> <p>Ariana Grande</p> 
+    </div></a>
+
+</div>
+
+    </div>
+    
+    
+    <div id="songs" class="glowborder">
+
+        <p class="heading">Groove Gallery</p>
+
+        <div class="container" id="Hindi" style="margin-top: 2rem;">
+
+            <div> <p style="font-size: 2rem; color: rgb(56, 238, 178); font-weight: 700; box-shadow: none;">Hindi Hits</p> </div>
+            
+            <div> <img src="./assets/hindi/janam.jpeg" alt="" srcset=""> <p>Janam Janam</p> <span>Dilwale</span> </div>
+            
+            <div> <img src="./assets/hindi/kaun tujhe.jpg" alt="" srcset=""> <p>Kaun tujhe</p> <span>MS Dhoni</span> </div>
+
+            <div> <img src="./assets/hindi/baarish.jpeg" alt="" srcset=""> <p>Baarish</p> <span>Half Girlfriend</span> </div>
+       
+            <div> <img src="./assets/hindi/dil ibadat.jpg" alt="" srcset=""> <p>Dil Ibadat</p> <span>Tum Mile</span> </div>
+
+            <div> <img src="./assets/hindi/tere sang yara.jpg" alt="" srcset=""> <p>Tere Sang Yara</p> <span>Rustom</span> </div>
+       
+        </div>
+
+        <div class="container" id="English" style="margin-top: 2rem;">
+
+            <div> <p style="font-size: 2rem; color: rgb(56, 238, 178); font-weight: 700; box-shadow: none;">English <br>Euphoria</p> </div>
+            
+            <div> <img src="./assets/english/I'll Wait.jpg" alt="" srcset=""> <p>I'll Wait</p> <span>Kygo and Sasha</span> </div>
+            
+            <div> <img src="./assets/english/let me go.jpg" alt="" srcset=""> <p>Let Me Go!</p> <span>Hailee Steinfeld</span> </div>
+
+            <div> <img src="./assets/english/qurantine clean.jpg" alt="" srcset=""> <p>Quarantine Clean</p> <span>Young Thug</span> </div>
+       
+            <div> <img src="./assets/english/roar.jpg" alt="" srcset=""> <p>Roar</p> <span>Katy Perry</span> </div>
+
+            <div> <img src="./assets/english/toosie slide.jpg" alt="" srcset=""> <p>Toosie Slide</p> <span>Drake</span> </div>
+       
+        </div>
+
+    </div>
+
+<!-- Responsive Queue -->
+
+<div id="queue" class="hidden_queue">
+
+    <div style="height: 3rem; justify-content: space-around;"> 
+        <p style="font-size: 2.5rem; font-weight: 900; color: white; text-shadow: 0px 0px 5px black;"> Queue </p> </div>
+    
+    <div class = "Q_container">
+        <p>1.</p>
+        <div class="Qn" id="Q1" style="height: 5rem; width: 4.5rem;"> <i class="fa-solid fa-play fa-beat"></i> </div>
+    <!-- <img src="./assets/Queue/walker.jpg" alt="" srcset="">         -->
+    <p>Alone <br> Alan Walker</p>
+        <i class="fa-solid fa-heart" style="color: red;"></i>
+    </div>
+    
+    <div class = "Q_container">
+        <p>2.</p>
+        <div class="Qn" id="Q2" style="height: 5rem; width: 4.5rem;"> <i class="fa-solid fa-play fa-beat"></i> </div>
+        <!-- <img src="./assets/Queue/after.jpg" alt="" srcset=""> -->
+                 <p>Alone again <br> The weekend</p>
+            <i class="fa-regular fa-heart"></i>
+        </div>
+        
+    
+    <div class = "Q_container">
+        <p>3.</p>
+        <div class="Qn" id="Q3" style="height: 5rem; width: 4.5rem;"> <i class="fa-solid fa-play fa-beat"></i> </div>
+      <!-- <img src="./assets/Queue/stoney.jpg" alt="" srcset=""> -->
+                     <p>Iverson<br> Post Malone</p>
+                <i class="fa-regular fa-heart"></i>
+     </div>
+            
+     <div class = "Q_container">
+        <p>4.</p>
+        <div class="Qn" id="Q4" style="height: 5rem; width: 4.5rem;"> <i class="fa-solid fa-play fa-beat"></i> </div>
+      <!-- <img src="./assets/Queue/beer.jpg" alt="" srcset=""> -->
+                     <p>Rockstar<br>21 Savage</p>
+                <i class="fa-solid fa-heart" style="color: red;"></i>
+     </div>
+    
+    
+     <div class = "Q_container">
+        <p>5.</p>
+        <div class="Qn" id="Q5" style="height: 5rem; width: 4.5rem;"> <i class="fa-solid fa-play fa-beat"></i> </div>
+      <!-- <img src="./assets/Queue/adele.jpg" alt="" srcset=""> -->
+                     <p>All I Ask<br> Adele</p>
+                <i class="fa-regular fa-heart"></i>
+     </div>
+    
+     <div class = "Q_container">
+        <p>6.</p>
+        <div class="Qn" id="Q6" style="height: 5rem; width: 4.5rem;"> <i class="fa-solid fa-play fa-beat"></i> </div>
+      <!-- <img src="./assets/artists/kk.png" alt="" srcset=""> -->
+                     <p>Labon Ko<br>KK</p>
+                <i class="fa-solid fa-heart" style="color: red;"></i>
+     </div>
+    
+    
+     <div class = "Q_container">
+        <p>7.</p>
+        <div class="Qn" id="Q7" style="height: 5rem; width: 4.5rem;"> <i class="fa-solid fa-play fa-beat"></i> </div>
+      <!-- <img src="./assets/Queue/billie eilish.jpg" alt="" srcset=""> -->
+                     <p>Bad Guy<br>Billie Eilish</p>
+                <i class="fa-regular fa-heart"></i>
+     </div>
+    
+    
+    </div>
+    
+
+<!-- Responsive Footer(Now Playing) -->
+
+<footer>
+
+    <div style="width: 50%; font-size: 1.2rem;">
+        <img src="./assets/right/pic2.jpg" alt="" srcset="">
+
+        <p>Astronaut in the ocean </p>
+
+        
+    </div>
+
+    <div style="width: 50%; flex-direction: column;">
+    
+        <div style="width: 100%; height: 100%; justify-content: space-around; font-size: 1.2rem;">
+
+            <!-- <i class="fa-solid fa-shuffle"></i> -->
+            <i class="fa-solid fa-backward-step"></i>
+            <i class="fa-solid fa-circle-play" style="font-size: 2rem;"></i>
+            <i class="fa-solid fa-forward-step"></i>
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            <!-- <i class="fa-solid fa-arrow-rotate-right"></i> -->
+        </div>
+
+<!-- <div style="width: 100%; height: 50%;">
+<p>1:33</p>
+<input type="range" style="width: 85%;">
+<p>4:12</p>
+</div> -->
+
+    </div>
+
+    <!-- <div style="width: 15rem; height: 100%; font-size: 1.2rem;">
+        <i class="fa-solid fa-list"></i>
+        <i class='bx bx-laptop'></i>
+        <i class='bx bxs-volume-full'></i>
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+    </div> -->
+
+</footer>
+
+</section>
+
+<!-- Right Side -->
+
+<section id="right_side">
+
+<div id="now">
+
+    <h3>Now Playing</h3>
+    <img src="./assets/right/pic2.jpg" alt="" srcset="">
+    
+<p>Astronaut in the ocean</p>
+
+    <div> <p>0:32</p> <input type="range" style="width: 55%;">
+        <p>3:45</p> </div>
+
+    <div>
+        <i class="fa-solid fa-shuffle"></i>
+        <i class="fa-solid fa-backward"></i>
+        <i class="fa-sharp fa-solid fa-circle-play" style="font-size: 2rem;"></i> 
+        <i class="fa-solid fa-forward"></i>
+        <i class="fa-solid fa-heart"></i>
+    </div>
+
+
+</div>
+
+<div id="queue">
+
+<div style="height: 3rem; justify-content: space-around;"> 
+    <p style="font-size: 2rem; font-weight: 900; color: white;"> Queue </p> </div>
+
+<div class = "Q_container">
+    <p>1.</p>
+    <div class="Qn" id="Q1" style="height: 5rem; width: 4.5rem;"> <i class="fa-solid fa-play fa-beat"></i> </div>
+<!-- <img src="./assets/Queue/walker.jpg" alt="" srcset="">         -->
+<p>Alone <br> Alan Walker</p>
+    <i class="fa-solid fa-heart" style="color: red;"></i>
+</div>
+
+<div class = "Q_container">
+    <p>2.</p>
+    <div class="Qn" id="Q2" style="height: 5rem; width: 4.5rem;"> <i class="fa-solid fa-play fa-beat"></i> </div>
+    <!-- <img src="./assets/Queue/after.jpg" alt="" srcset=""> -->
+             <p>Alone again <br> The weekend</p>
+        <i class="fa-regular fa-heart"></i>
+    </div>
+    
+
+<div class = "Q_container">
+    <p>3.</p>
+    <div class="Qn" id="Q3" style="height: 5rem; width: 4.5rem;"> <i class="fa-solid fa-play fa-beat"></i> </div>
+  <!-- <img src="./assets/Queue/stoney.jpg" alt="" srcset=""> -->
+                 <p>Iverson<br> Post Malone</p>
+            <i class="fa-regular fa-heart"></i>
+ </div>
+        
+ <div class = "Q_container">
+    <p>4.</p>
+    <div class="Qn" id="Q4" style="height: 5rem; width: 4.5rem;"> <i class="fa-solid fa-play fa-beat"></i> </div>
+  <!-- <img src="./assets/Queue/beer.jpg" alt="" srcset=""> -->
+                 <p>Rockstar<br>21 Savage</p>
+            <i class="fa-solid fa-heart" style="color: red;"></i>
+ </div>
+
+
+ <div class = "Q_container">
+    <p>5.</p>
+    <div class="Qn" id="Q5" style="height: 5rem; width: 4.5rem;"> <i class="fa-solid fa-play fa-beat"></i> </div>
+  <!-- <img src="./assets/Queue/adele.jpg" alt="" srcset=""> -->
+                 <p>All I Ask<br> Adele</p>
+            <i class="fa-regular fa-heart"></i>
+ </div>
+
+ <div class = "Q_container">
+    <p>6.</p>
+    <div class="Qn" id="Q6" style="height: 5rem; width: 4.5rem;"> <i class="fa-solid fa-play fa-beat"></i> </div>
+  <!-- <img src="./assets/artists/kk.png" alt="" srcset=""> -->
+                 <p>Labon Ko<br>KK</p>
+            <i class="fa-solid fa-heart" style="color: red;"></i>
+ </div>
+
+
+ <div class = "Q_container">
+    <p>7.</p>
+    <div class="Qn" id="Q7" style="height: 5rem; width: 4.5rem;"> <i class="fa-solid fa-play fa-beat"></i> </div>
+  <!-- <img src="./assets/Queue/billie eilish.jpg" alt="" srcset=""> -->
+                 <p>Bad Guy<br>Billie Eilish</p>
+            <i class="fa-regular fa-heart"></i>
+ </div>
+
+
+</div>
+
+</section>
+
+
+</body>
+</html>

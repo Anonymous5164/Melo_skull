@@ -1,0 +1,337 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: radial-gradient(rgb(94, 31, 94) 0%, rgb(37, 37, 99)35% ,rgb(17, 27, 55)70%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+}
+
+#left_side{
+    width: 4.5rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1.5rem 1.5rem 0rem 1rem;
+    /* background-color: rgba(128, 128, 128, 0.4);
+    box-shadow: 0px 0px 5px 4px lightgray;
+    margin: 3.5rem; */
+
+    /* removing_bg */
+    /* background-color: rgba(128, 128, 128, 0.2);
+    box-shadow: 0px 0px 5px 4px lightgray; */
+    position: sticky;
+    top: 1.5rem;
+    left: 1rem;
+}
+
+
+/* Left Side -> Logo */
+
+#logo{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 2px solid white;
+    /* margin: 0.8rem; */
+    margin-top: 1.5rem;
+    background-color: greenyellow;
+    overflow: hidden;
+    animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+#logo img{
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+}
+
+#logo:hover{
+    box-shadow: 0px 0px 10px 2px whitesmoke;
+    background-color: black;
+    cursor: pointer;
+    animation: none;
+}
+
+/* Left Side -> Icon list */
+
+#list_icons{
+    height: auto;
+    width: 100%;
+    margin-top: 2.5rem;
+    text-align: center;
+    /* padding: 1.5rem; */
+}
+
+#list_icons ul{
+    list-style-type: none;
+    margin-bottom: 1.5rem;
+    /* margin-left: 1rem; */
+}
+
+
+#list_icons li{
+    
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+#list_icons li i:hover{
+    cursor: pointer;
+    color: greenyellow;
+    text-shadow: 0px 0px 10px white;
+      
+}
+
+
+/* MID Section */
+
+#mid{
+    width: 70vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5rem;
+    background-color: rgba(128, 128, 128, 0.2);
+    min-width: 500px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#artist{
+    box-sizing: border-box;
+    width: 100%;
+    height: 17rem;
+    background-image: url("./assets/playlist/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+#artist h1{
+    color: white; 
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 0px 0px 20px black;
+}
+
+#artist h1 span{
+    font-size: 1.2rem;
+    word-spacing: 0.8rem;
+}
+
+#artist button{
+    display: block;
+    background-color: rgb(47, 46, 46, 0.5);
+    height: 2rem;
+    width: 8rem;
+    color: white;
+    box-shadow: 0px 0px 10px 5px lightgray;
+    margin: 0.5rem;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+#artist button:hover{
+    background-color: rgb(224, 221, 221);
+    color: black;
+    cursor: pointer;
+}
+
+#oneDicons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#oneDicons i{
+    margin-right: 1.5rem;
+}
+
+#oneDicons i:hover{
+    cursor: pointer;
+    color: greenyellow;
+}
+
+#oneDicons i.fa-heart:hover i.fa-heart{
+    columns: red !important;
+}
+
+/* Songs in Playlist */
+
+#mid .songs{
+    box-sizing: border-box;
+    width: 100%;
+    height: 3rem;
+    /* border: 2px solid white; */
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: white;
+}
+
+#mid .songs span{
+    color: lightgray;
+    font-size: 0.8rem;
+}
+
+#mid .songs img{
+    height: 2.8rem;
+    width: 2.8rem;
+}
+
+#mid .songs .songicons{
+    height: 100%; 
+    width: 7%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mid .songs .songinfo{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mid .songs .song_pic{
+    height: 2.8rem;
+    width: 2.8rem;
+    color: transparent;
+    padding: auto;
+    font-size: 2rem;
+    /* border: 2px solid white; */
+    text-align: center;
+}
+
+.songs:hover{
+   background-color: rgb(197, 195, 195, 0.5);
+}
+
+.songs:hover i{
+   color: white;
+   color: greenyellow;
+   
+}
+
+.songs i:hover{
+    cursor: pointer;
+}
+
+.songs .pic_num{
+    height: 100%;
+    width: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sp1{
+    background-image: url("./assets/Queue/walker.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sp2{
+    background-image: url("./assets/Queue/adele.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sp3{
+    background-image: url("./assets/Queue/beer.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sp4{
+    background-image: url("./assets/Queue/billie\ eilish.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/* Footer */
+footer{
+    height: 3.5rem;
+    width: 100%;
+    /* margin-left: 5%; */
+    background-color: rgb(14, 37, 29);
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer div{
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: greenyellow;
+    /* border: 2px solid white; */
+}
+
+footer img{
+    height: 3.5rem;
+    width: 4rem;
+}
+
+footer p{
+    color: white;
+}
+
+footer i:hover{
+    color: white;
+    cursor: pointer;
+}
